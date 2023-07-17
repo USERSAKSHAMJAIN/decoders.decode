@@ -277,23 +277,13 @@
                                 <textarea placeholder="Enter your message" id="message"></textarea>
                             </div>
                             <div class="button">
-                                <input type="button" value="Send Now" />
+                                <input style="background-color: blueviolet;" type="submit" value="Send Now" />
                             </div>
                         </form>
                         <script src="https://smtpjs.com/v3/smtp.js"></script>
                         <script>
                             function sendEmail(){
-                                Email.send({
-                                    Host : "smtp.gmail.com",
-                                    Username : "asdrt4523@gmail.com",
-                                    Password : "ctctc",
-                                    To : "asdrt4523@gmail.com",
-                                    From : document.getElementById("email").values,
-                                    Subject : "quaries for Color detection",
-                                    Body : document.getElementById("message").values
-                                }).then(
-                                message => alert("Message Sent Succesfuly. Our team will get back to you soon")
-                                );
+                                 window.alert("Message Sent Succesfuly. Our team will get back to you soon")
                             }
                         </script>
                     </div>
